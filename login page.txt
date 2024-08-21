@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>WebPage</title>
+   <link rel="stylesheet" href="magi2.css">
+ </head>
+<body>
+  <div class="main">
+    <div class="navbar">
+        <div class="icon">
+                     <h2 class="logo">PraRoz</h2>
+                    </div>
+    <div class="menu">
+      <ul>
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">ABOUT</a></li>
+        <li><a href="#">SERVICE</a></li>
+        <li><a href="#">DESIGN</a></li>
+        <li><a href="#">CONTACT</a></li>
+             </ul>
+    </div> 
+    <div class="search">
+      <input class="srch" name="" placeholder="search here">
+      <a href="#"><button class="btn">Search</button></a>
+    </div>
+      </div>
+      <div class="content">
+        <h1>Awe-inspiring<br><span>Locations</span><br>to Lodge</h1>
+<p class="par"><br>Travelers today seek more than just a place to stay –  they crave an experience <br> that is beyond the ordinary.
+    They want to be immersed in the local culture, <br> surrounded by breathtaking natural beauty, and luxurious amenities. <br>
+    With this in mind, we handpicked collection of <br> designer houses with warm ambiances, each nestled in awe-inspiring locations. <br>
+    We focused on providing detailed information about each property, <br> including stunning visuals and vivid descriptions, <br>
+    to evoke the emotions and excitement of staying in these unique homes.!</p>
+    <button class="cn"><a href="#">JOIN US</a></button>
+<form class="form" name="myForm">
+  <h2>Login Here</h2>
+  <input type="email" id="email" name="email" placeholder="enter ur email here" required>
+  <input type="password" id="password" name="password" placeholder="enter ur password here" required>
+  <button class="btnn" type="submit"><a href="#">Login</a></button>
+  <p class="fp">Froget Password</p>
+  <p class="link">Don't have an Account?<br>
+   <a href="#"></a>Sign Up Here!</p>
+   <p class="liw">OR <br> Login with... </p>
+   <div class="icons">
+    <a href="#"><ion-icon name="logo-facebook">🌐</ion-icon></a>
+    <a href="#"><ion-icon name="logo-instagram">📞</ion-icon></a>
+    <a href="#"><ion-icon name="logo-twitter">ⓕ</ion-icon></a>
+    <a href="#"><ion-icon name="logo-google">📧</ion-icon></a>
+   </div>
+</form>
+  </div>
+  </div>   
+</body>
+</html>
+------------------------------------------------------------------------------------------------------------------------------------------
+*{
+    margin:0;
+    padding: 0;
+}
+body{
+    overflow: hidden;
+}
+.main{
+    background-image: linear-gradient(to top,rgba(0,0,0,0.10) 50%, rgba(0,0,0,0.10) 50%),url(wallpaper.jpg);
+    background-size:cover ;
+    background-position: center;
+    height:109vh;
+    background-size: cover;
+    justify-content: fixed;
+}
+.navbar{
+    width:1200px;
+    height:75px;
+    margin: auto;
+    padding-right: 250px;
+}
+.icon{
+    width: 200px;
+    float:left;
+    height: 70px;
+}
+.logo{
+    color: red;
+    font-size:35px ;
+    font-family:Arial;
+    padding-left:0px;
+    float:left;
+    padding-top :12px; 
+}
+.menu{
+    width: 400px;
+    float: left;
+    height: 70px;
+}
+ul{
+    display:flex;
+    float: left;
+    justify-content: center;
+    align-items: center;
+}
+ul li{
+    list-style: none;
+    margin-left:70px;
+     margin-top: 27px;
+    font-size: 14px;
+    }
+ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: arial;
+    font-weight: bold;
+    transition: .40s ease-in-out;
+    }
+    ul li a:hover {
+        color: red;
+    }   
+.search{
+  width: 330px;
+  float: left;
+  margin-left:270px; 
+  }
+.srch{
+    font-family: 'Times New Roman';
+    width: 200px;
+    height:20px;
+    border: 1px solid red;
+    margin-top:13px ;
+    background: transparent;
+    color: white;
+    border-right: none;
+    font-size: 16px;
+    float: left;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.btn{
+    width: 100px;
+    height:41px ;
+    background:red;
+    border: 2px solid red;
+    margin-top: 13px;
+    color: white;
+    font-size: 15px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px; 
+}
+.btn:focus{
+    outline: none;
+    }
+.srch:focus{
+    outline: none;
+}    
+.content{
+    width: 1200px;
+    height:auto;
+    margin: auto;
+    color:aliceblue;
+    position:relative;
+   }
+.content .par{
+    padding-right: none;    
+    padding-bottom:25px ;
+    font-family: Arial;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+   }
+.content h1{
+    font-family: 'Times New Roman';
+    font-size:50px ;
+    padding-left:none;
+    margin-top:5%;
+    letter-spacing: 2px;
+}
+.content .cn{
+    width:13%;
+    height: 40px;
+    background: red;
+    border: none;
+    margin-bottom: 10px;
+    margin-right: 1000px;
+    font-size: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s ease;
+}
+.content .cn a{
+    text-decoration: none;
+    color: black;
+    transition: .3s ease;
+    font-weight: bolder;
+}
+.cn:hover{
+    background: white;
+}
+.form{
+    width: 250px;
+    height: 450px;
+    background:linear-gradient(to top,rgba(0,0,0,0.8),rgba(0,0,0,0.8)50%);
+    position: absolute;
+    top:-20px;
+    left: 870px;
+    border-radius: 10px;
+    padding: 25px;
+}
+.form h2{
+   width: 220px;
+   font-family: sans-serif;
+   text-align: center;
+   color:red;
+   font-size: 22px;
+   background-color: white;
+   border-radius: 10px;
+   margin: 2px;
+   padding: 8px; 
+}
+.form input{
+    width:240px;
+    height: 35px;
+    background:transparent;
+    color: white;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    font-family: sans-serif;
+}
+.form input:focus{
+    outline: none;
+}
+::placeholder{
+    color: white;
+    font-family: arial;
+    }
+.btnn{
+    width: 240px;
+    height: 40px;
+    background:red;
+    margin-top:30px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor:pointer;
+    color: white;
+    transition: 0.4s ease ;   
+   }
+   .btnn :hover{
+     background: white;
+     color: red;
+
+   }
+   .btnn a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+   }
+   .form .link{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:17px    ;
+    padding-top: 20px;
+    text-align: center;
+   }
+   .form .link a{
+    text-decoration: none;
+    color: red;
+
+   }
+   .liw{
+    padding-top: 15px;
+    padding-bottom: 10px;
+    text-align: center;
+
+   }
+   .icons a{
+    text-decoration: none;
+    color: white;
+    
+   } 
+   .icons ion-icon{
+    color:white;
+    font-size: 30px;
+    padding-left: 14px;
+    padding-top: 5px;
+    transition: o.3s ease;
+
+   }
+   .icons ion-icon:hover{
+    color: red;
+   }
+ 
+   @media screen and (max-width: 1170px)  {
+    .navbar{
+        width: 100%;
+        height: 100px;
+            }
+            ul{
+                margin-left: 20px;
+                            }
+                            ul li{
+                                margin-top: -1px;
+                                margin-left:8px;
+                                padding: 18px;
+                            }
+                            ul li a{
+                                font-size: 2vw;
+                            }
+                            .search{
+                                margin-top: 3px;
+                                margin-left:290px;
+                           }
+                           .srch{
+                            height:40px;
+                            width:190px;
+                            font-size:20px;
+                            border: 1px solid rgb(89, 5, 5);
+                        }
+                        .btn{
+                            width: 90px;
+                            height:62px ;
+                            background:rgb(89, 5, 5);
+                            border: 2px solid rgb(89, 5, 5);
+                            margin-top: 13px;
+                            color: white;
+                            font-size: 15px;
+                            border-bottom-right-radius: 5px;
+                            border-top-right-radius: 5px; 
+                        }
+    .main {
+      padding-left: 20px;
+      height: 180vh;
+    }
+    .form{
+
+        width: 250px;
+        height: 380px;
+        background:linear-gradient(to top,rgba(0,0,0,0.8),rgba(0,0,0,0.8)50%);
+        position: absolute;
+        top:550px;
+        left: 80px;
+        border-radius: 10px;
+        padding: 25px;
+    }
+    .form input{
+        width:150px;
+        height: 20px;
+        background:transparent;
+        color: white;
+        font-size: 15px;
+        letter-spacing: 1px;
+        margin-top: 30px;
+        font-family: sans-serif;
+        justify-content: center;
+        margin-left: 60px;
+    }
+  }
+------------------------------------------------------------------------------------------------------------------------------------------
